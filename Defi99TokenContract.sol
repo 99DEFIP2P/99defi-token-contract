@@ -1,5 +1,5 @@
 /**
- *Submitted for verification at BscScan.com on 2021-03-31
+ *Submitted for verification at BscScan.com on 2021-11-15
 */
 
 pragma solidity 0.5.16;
@@ -10,7 +10,7 @@ pragma solidity 0.5.16;
 //
 // Name        : 99DEFI
 // Symbol      : 99DEFI
-// Decimals    : 08
+// Decimals    : 18
 //
 // ----------------------------------------------------------------------------
 
@@ -165,8 +165,8 @@ contract DFI is Context, IBEP20, Ownable {
   constructor() public {
     _name = "99DEFI";
     _symbol = "99DEFI";
-    _decimals = 8;
-    _totalSupply = 100000000 * 10**8;
+    _decimals = 18;
+    _totalSupply = 21000000 * 10**18;
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
